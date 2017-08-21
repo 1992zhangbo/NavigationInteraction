@@ -29,6 +29,13 @@
     [self.view addSubview:self.colorNavBar];
 }
 
+- (void)viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+    if (self.colorNavBar) {
+        [self.view bringSubviewToFront:self.colorNavBar];
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

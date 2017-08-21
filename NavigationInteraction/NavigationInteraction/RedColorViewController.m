@@ -21,6 +21,12 @@
     [self ex_setBackgroundColor:[UIColor redColor]];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"下一步" style:UIBarButtonItemStylePlain target:self action:@selector(next)];
+    
+    
+    
+    UIView * view = [[UIView alloc]initWithFrame:CGRectMake(30, 0, 100, 80)];
+    view.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:view];
 }
 
 
