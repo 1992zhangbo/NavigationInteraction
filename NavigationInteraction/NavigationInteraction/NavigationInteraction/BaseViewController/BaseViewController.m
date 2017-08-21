@@ -98,6 +98,7 @@
  */
 - (void)ex_setTranslationY:(CGFloat)translationY
 {
+    [self.colorNavBar ex_setTranslationY:translationY];
     [self.navigationController.navigationBar ex_setTranslationY:translationY];
 }
 
